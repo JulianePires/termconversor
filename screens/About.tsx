@@ -3,7 +3,7 @@ import { FaGithubAlt } from "react-icons/fa";
 
 export const About = () => {
   return (
-    <VStack h="80vh" spacing="6" p={["6", "6", "10", "4"]}>
+    <VStack h="85vh" spacing="6" p={["6", "6", "10", "4"]}>
       <Image
         w={["40", "40", "60"]}
         src="https://i1.sndcdn.com/avatars-000310442653-nt0o0y-t500x500.jpg"

@@ -25,7 +25,7 @@ export const Menu = ({ switchActivePath, isCurrentPage }: menuProps) => {
     <Flex
       p="4"
       w="100%"
-      h="20vh"
+      h="15vh"
       bgColor="whiteAlpha.50"
       boxShadow="md"
       alignItems="center"

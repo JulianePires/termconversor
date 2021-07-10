@@ -62,7 +62,7 @@ export const HomeScreen = () => {
   }
 
   return (
-    <Flex w="100%" h="80vh" alignItems="center" justifyContent="center" p="4">
+    <Flex w="100%" h="85vh" alignItems="center" justifyContent="center" p="4">
       <Stack
         spacing={["8", "8", "10", "4"]}
         direction={["column", "column", "column", "row"]}
