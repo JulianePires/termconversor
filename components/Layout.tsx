@@ -6,7 +6,7 @@ interface LayoutProps {
   title: string;
 }
 
-const layout = ({ children, title }: LayoutProps) => {
+export const Layout = ({ children, title }: LayoutProps) => {
   return (
     <>
       <Head>
@@ -18,10 +18,14 @@ const layout = ({ children, title }: LayoutProps) => {
           content="Temperature conversor made with Next JS, Material UI and Typescript"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       {children}
     </>
   );
 };
-
-export default layout;

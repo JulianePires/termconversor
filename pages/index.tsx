@@ -1,11 +1,8 @@
 import { NextPage } from "next";
 import { useState } from "react";
 
-import { Box } from "@material-ui/core";
-
-import Layout from "../components/Layout";
-import Menu from "../components/Menu";
-import styles from "../styles/Home.module.scss";
+import { Layout } from "../components/Layout";
+import { Menu } from "../components/Menu";
 
 type activePaths = "Home" | "About";
 
@@ -19,12 +16,17 @@ const Home: NextPage = () => {
       setActivePath("Home");
     }
   }
+
+  function checkCurrentPage(page: string) {
+    return page === activePath ? true : false;
+  }
+
   return (
     <Layout title={`TermConversor | ${activePath}`}>
-      <Box width="100%">
-        <Menu switchActivePath={toggleSwitchActivePath} />
-        Olá
-      </Box>
+      <Menu
+        isCurrentPage={checkCurrentPage}
+        switchActivePath={toggleSwitchActivePath}
+      />
     </Layout>
   );
 };

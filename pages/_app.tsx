@@ -1,14 +1,13 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import { CssBaseline, ThemeProvider } from "@material-ui/core";
-import { theme } from "../styles/theme";
+import { ChakraProvider } from "@chakra-ui/react";
+import theme from "../styles/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Component {...pageProps} />;
-    </ThemeProvider>
+    <ChakraProvider theme={theme}>
+      <Component {...pageProps} />
+    </ChakraProvider>
   );
 }
 export default MyApp;
