@@ -21,7 +21,7 @@
 
   <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/JulianePires/termconversor?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/JulianePires/termconversor?color=56BEB8" /> -->
+  <img alt="Github stars" src="https://img.shields.io/github/stars/JulianePires/termconversor?color=56BEB8" />
 </p>
 
 <!-- Status -->
@@ -46,23 +46,22 @@
 
 ## :dart: Sobre ##
 
-Sobre o seu projeto
+Conversor de temperaturas desenvolvido durante o módulo 4 do curso de Front End da Blue EdTech
 
 ## :sparkles: Funcionalidades ##
 
-:heavy_check_mark: Funcionalidade 1;\
-:heavy_check_mark: Funcionalidade 2;\
-:heavy_check_mark: Funcionalidade 3;
+:heavy_check_mark: Conversão de Temperatura entre unidades (C, F, K);\
+:heavy_check_mark: Troca de tema (dark | light);\
+:heavy_check_mark: Responsividade;
 
 ## :rocket: Tecnologias ##
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Chakra-ui](https://chakra-ui.com/)
+- [React Icons](https://react-icons.github.io/react-icons)
 
 ## :white_check_mark: Pré requisitos ##
 
