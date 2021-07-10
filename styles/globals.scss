@@ -20,3 +20,15 @@ a {
 button {
   cursor: pointer;
 }
+
+@media (max-width: 720px) {
+  body {
+    font-size: 96.5%;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    font-size: 87.6%;
+  }
+}
