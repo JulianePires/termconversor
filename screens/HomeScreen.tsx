@@ -40,10 +40,13 @@ export const HomeScreen = () => {
     switch (toConvert) {
       case "celcius":
         setResult(fromCelcius(initialTemperature, convertTo, decimalPlaces));
+        setInitialTemperature(zeroTemperatures(toConvert));
       case "fahrenheit":
         setResult(fromFahrenheit(initialTemperature, convertTo, decimalPlaces));
+        setInitialTemperature(zeroTemperatures(toConvert));
       case "kelvin":
         setResult(fromKelvin(initialTemperature, convertTo, decimalPlaces));
+        setInitialTemperature(zeroTemperatures(toConvert));
     }
   }
 
