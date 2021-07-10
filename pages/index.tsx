@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import { Layout } from "../components/Layout";
 import { Menu } from "../components/Menu";
+import { HomeScreen } from "../screens/HomeScreen";
 
 type activePaths = "Home" | "About";
 
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
         isCurrentPage={checkCurrentPage}
         switchActivePath={toggleSwitchActivePath}
       />
+      {activePath === "Home" && <HomeScreen />}
     </Layout>
   );
 };

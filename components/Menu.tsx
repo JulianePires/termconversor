@@ -25,7 +25,7 @@ export const Menu = ({ switchActivePath, isCurrentPage }: menuProps) => {
     <Flex
       p="4"
       w="100%"
-      h="24"
+      h="20vh"
       bgColor="whiteAlpha.50"
       boxShadow="md"
       alignItems="center"
@@ -51,7 +51,6 @@ export const Menu = ({ switchActivePath, isCurrentPage }: menuProps) => {
         >
           <BreadcrumbItem isCurrentPage={isCurrentPage("Home")}>
             <BreadcrumbLink
-              href="#"
               onClick={switchActivePath}
               color={
                 isCurrentPage("Home")
@@ -69,7 +68,6 @@ export const Menu = ({ switchActivePath, isCurrentPage }: menuProps) => {
           </BreadcrumbItem>
           <BreadcrumbItem isCurrentPage={isCurrentPage("About")}>
             <BreadcrumbLink
-              href="#"
               onClick={switchActivePath}
               color={
                 isCurrentPage("About")
