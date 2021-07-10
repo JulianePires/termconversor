@@ -3,6 +3,7 @@ import {
   Divider,
   Flex,
   HStack,
+  Stack,
   Stat,
   StatLabel,
   StatNumber,
@@ -61,8 +62,14 @@ export const HomeScreen = () => {
   }
 
   return (
-    <Flex w="100%" h="80vh" alignItems="center" justifyContent="center">
-      <HStack spacing="4">
+    <Flex w="100%" h="80vh" alignItems="center" justifyContent="center" p="4">
+      <Stack
+        spacing={["8", "8", "10", "4"]}
+        direction={["column", "column", "column", "row"]}
+        wrap={["wrap", "wrap", "wrap", "nowrap"]}
+        alignItems="center"
+        justifyContent="center"
+      >
         <VStack w="100%">
           <Text color="orange">Initial Temperature</Text>
           <NumberInput
@@ -80,7 +87,6 @@ export const HomeScreen = () => {
           />
         </VStack>
 
-        <Divider color="orange" orientation="vertical" />
         <VStack w="100%">
           <Text color="orange">Decimal Places</Text>
           <NumberInput
@@ -90,7 +96,7 @@ export const HomeScreen = () => {
             onChange={(value) => setDecimalPlaces(Number(value))}
           />
         </VStack>
-        <Divider color="orange" orientation="vertical" />
+
         <VStack w="100%">
           <Text color="orange">Unity to Convert</Text>
           <UnitySelector
@@ -100,7 +106,7 @@ export const HomeScreen = () => {
             onSelectKelvin={() => handleChangeConvertTo("kelvin")}
           />
         </VStack>
-        <Divider color="orange" orientation="vertical" />
+
         <Button w="56" colorScheme="orange" onClick={convertTemperature}>
           Convert
         </Button>
@@ -108,7 +114,7 @@ export const HomeScreen = () => {
           <StatLabel color="orange">Temperature</StatLabel>
           <StatNumber>{`${result}º${changeInitials(convertTo)}`}</StatNumber>
         </Stat>
-      </HStack>
+      </Stack>
     </Flex>
   );
 };

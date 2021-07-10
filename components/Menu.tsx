@@ -30,14 +30,15 @@ export const Menu = ({ switchActivePath, isCurrentPage }: menuProps) => {
       boxShadow="md"
       alignItems="center"
       justifyContent="space-around"
+      wrap={["wrap", "wrap", "wrap", "nowrap"]}
     >
-      <Image h="100%" src="./logo-blue.gif" />
+      <Image h={["50%", "50%", "50%", "100%"]} src="./logo-blue.gif" />
       <Text
         fontFamily="'Montserrat', sans-serif"
         fontWeight="600"
         colorScheme="orange"
         color={colorMode === "dark" ? "orange.100" : "orange.400"}
-        fontSize="3xl"
+        fontSize={["xl", "xl", "xl", "3xl"]}
       >
         TermConversor
       </Text>
